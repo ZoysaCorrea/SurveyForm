@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">SURVEY FORM</h1>
+            <p id="description"><i>Help us to improve by filling the form!</i></p>
+        </header>
+        <main>
+            <form id="survey_form">
+                <!-- name, email id, age textbox -->
+                <div id="pdetails_div">
+                <label for="name" id="name_label">Name</label><br>
+                <input type="text" placeholder="Enter your name here" id="name" class="pdetails" required="">
+                <br>
+                <label for="email" id="email_label">Email Id</label><br>
+                <input type="email" placeholder="Enter your email id here" pattern="{a-z@gmail.com}" id="email" class="pdetails">
+                <br>
+                <label for="number" id="number_label">Age(optional)</label><br>
+                <input type="number" placeholder="Enter your age here" min="10" max="80" id="number" class="pdetails">
+                </div>
+                <!-- name, email id, age textbox -->
+                <br>
+                <!-- current role dropdown selection -->
+                <div id="role_div">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown">
+                    <option disabled="" selected="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="learner">Full time learner</option>
+                    <option value="job">Full time job</option>
+                    <option value="prefernot">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+                </div>              
+                <!-- current role dropdown selection -->
+                <br>
+                <!-- recommendation radio button -->
+                <div id="recommend_div">
+                <p>Would you like to recommend our website to your friends?</p>
+                
+                <input type="radio" name="recommend" id="definetly" value="definetly" checked>
+                <label for="definetly" class="container">Definetly
+                </label>
+                <br>
+                
+                <input type="radio" name="recommend" id="maybe" value="maybe">
+                <label for="maybe" class="container">Maybe
+                </label>
+                <br>
+                
+                <input type="radio" name="recommend" id="notsure" value="not sure">
+                <label for="notsure" class="container">Not sure
+                </label>
+                </div>
+                <!-- recommendation radio button -->
+                <br>
+                <!-- improvement checkbox -->
+                <div id="improve_div">
+                <p>What would you like to see improved?</p>
+                
+                <input type="checkbox" name="improve" id="front-end-projects" value="front-end-projects">
+                <label for="front-end-projects">front-end Projects</label>
+                <br>
+                
+                <input type="checkbox" name="improve" id="back-end-projects" value="back-end-projects">
+                <label for="back-end-projects">back-end Projects</label>
+                <br>
+                
+                <input type="checkbox" name="improve" id="data-visualization" value="data-visualization">
+                <label for="data-visualization">data Visualization</label>
+                <br>
+                
+                <input type="checkbox" name="improve" id="challenges" value="challenges">
+                <label for="challenges">challenges</label>
+                <br>
+                
+                <input type="checkbox" name="improve" id="videos" value="videos">
+                <label for="videos">videos</label>
+                <br>
+                
+                <input type="checkbox" name="improve" id="forum" value="forum">
+                <label for="forum">forum</label>
+                </div>
+                <!-- improvement checkbox -->
+                <br>
+                <!-- comments and suggestions -->
+                <div id="comments_div">
+                <label for="comments">Any comments or suggestions?<br>
+                <textarea rows=10 cols="45" id="comments" maxlength="450" name="comments" placeholder="Enter the comment here..."></textarea>
+                </div>
+                <!-- comments and suggestions -->
+                <br>
+                <div id="submit_div">
+                <input type="submit" id="submit">
+                </div>
+            </form>
+        </main>
+        <br>
+        <br>
+    <footer>
+    </footer>
+</body>
+</html>

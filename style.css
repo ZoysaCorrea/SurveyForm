@@ -1,0 +1,191 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    vertical-align:middle;
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url('backgroundimg.jpg');
+}
+
+
+#title, #description{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#title{
+    color: rgb(212, 225, 253);
+    letter-spacing: 5px;
+}
+
+#survey_form{
+    position: relative;
+    top: 0px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color:rgba(27, 27, 50, 0.8);
+    width: 100%;
+    display: table;
+    font-size: 0.7em;
+    padding: 2em;
+}    
+
+
+.pdetails{
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 3px;
+    border: none;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.7em;
+}
+
+.pdetails:focus, #dropdown:focus, #comments:focus{
+    outline: none;
+    border-radius: 10px;
+}
+
+#name_label, #email_label, #number_label, p, #recommend_div, #improve_div, #comments_div{
+    color: white;
+    box-sizing: border-box;
+    font-size: 0.7em;
+}
+
+#dropdown{
+    width: 100%;
+    height: 40px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+    font-size: 0.7em;
+    color:rgb(110, 110, 110);
+}
+
+#comments{
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color:rgb(255, 255, 255);
+}
+#submit{
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: #37af65;
+    letter-spacing: 2px;
+}
+
+/* media query starts from here */
+
+@media (max-width: 1024){
+    .pdetails{
+        width: 100%;
+        height: 30px;
+        padding: 20px;
+        border-radius: 3px;
+        border: none;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 280px){
+    #survey_form{
+        font-size: 25px;
+        padding: 25px;
+        }
+    }
+
+    @media (min-width: 320px){
+        #survey_form{
+            font-size: 20px;
+            padding: 20px;
+            }
+        }
+
+        @media (min-width: 360px){
+            #survey_form{
+                font-size: 20px;
+                padding: 25px;
+                }
+            }
+            @media (min-width: 380px){
+                #survey_form{
+                    font-size: 25px;
+                    padding: 20px;
+                    }
+                }
+                @media (min-width: 411px){
+                    #survey_form{
+                        font-size: 25px;
+                        padding: 20px;
+                        width: 100%;
+                        }
+
+                        #title, #description{
+                            text-align: center;
+                            box-sizing: border-box;
+                            font-size: 25px;
+                        }
+                    }
+
+                    @media (min-width: 600px){
+                        #survey_form{
+                            font-size: 30px;
+                            padding: 20px;                            
+                            left: 10%;;
+                            width: 80%;
+                            }
+
+                            #title, #description{
+                                text-align: center;
+                                box-sizing: border-box;
+                                font-size: 25px;
+                            }
+                        }
+
+                        @media (min-width: 768px){
+                            #survey_form{
+                                font-size: 30px;
+                                padding: 20px;                                
+                                left: 15%;;
+                                width: 70%;
+                                }
+                                
+                                #title, #description{
+                                    text-align: center;
+                                    box-sizing: border-box;
+                                    font-size: 30px;
+                                }
+
+                            }
+                        
+                        @media (min-width: 1024px){
+                            #survey_form{
+                                font-size: 25px;
+                                padding: 35px;
+                                left: 25%;
+                                width: 50%;
+                            }
+
+                                #title, #description{
+                                    text-align: center;
+                                    box-sizing: border-box;
+                                    font-size: 35px;
+                                }
+                            }
+            
